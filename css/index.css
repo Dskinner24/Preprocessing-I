@@ -1,1 +1,428 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background: lightcyan;
+  vertical-align: center;
+}
+.Nav-Bar {
+  width: 90%;
+  height: 35px;
+  background-color: black;
+  border: 1px solid whitesmoke;
+  margin-left: 5%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.Nav-Bar a {
+  font-family: "Palatino Lynotype", "Palatino Linotype";
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  text-shadow: 4px 4px 7px #88ddf7;
+  margin-top: 50%;
+  margin-left: 10px;
+}
+.Nav-Bar a:hover {
+  color: red;
+  text-transform: uppercase;
+}
+.header {
+  width: 90%;
+  height: 530px;
+  background-color: darkgrey;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .header {
+    height: 575px;
+  }
+}
+.header img {
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+@media (max-width: 500px) {
+  .header img {
+    margin-left: 20%;
+  }
+}
+.header .quote {
+  margin-left: 50px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-family: "Brush Script MT", "Brush Script MT", "Cursive";
+  font-style: italic;
+}
+.header .side {
+  width: 85%;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header .Name {
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 250%;
+  font-family: "Rockwell", "Rockwell", "serif";
+}
+.header button {
+  margin-left: 50px;
+  margin-top: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  .header button {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+.header button:hover {
+  background-color: black;
+  color: white;
+}
+.Description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 5%;
+  text-shadow: 2px 2px white;
+}
+.Description .Self {
+  width: 45%;
+  height: 420px;
+  background-color: lightgrey;
+  padding: 20px;
+  line-height: 190%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .Description .Self {
+    height: 540px;
+  }
+}
+.Description .Headers {
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-family: "Rockwell", "Rockwell", "serif";
+}
+.Description .Short {
+  font-size: 18px;
+  font-family: "Lucida Console", "Lucida Console", "Monospace";
+}
+@media (max-width: 500px) {
+  .Description .Short {
+    line-height: 1;
+  }
+}
+.Description .Skills {
+  width: 45%;
+  height: 420px;
+  background-color: lightgrey;
+  padding: 20px;
+  line-height: 190%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 5%;
+}
+@media (max-width: 500px) {
+  .Description .Skills {
+    height: 540px;
+  }
+}
+.Description ul {
+  font-size: 18px;
+  font-family: "Lucida Console", "Lucida Console", "Monospace";
+  list-style-type: circle;
+}
+@media (max-width: 500px) {
+  .Description ul {
+    line-height: 1;
+  }
+}
+.Description ul li {
+  line-height: 400%;
+}
+.History {
+  width: 95.2%;
+}
+.History h2 {
+  background-color: lightgrey;
+  font-size: 25px;
+  text-align: center;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 5%;
+  text-shadow: 2px 2px white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.History h2:hover {
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px silver;
+}
+.History .Jobs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+.History .Even {
+  width: 30%;
+  height: 150px;
+  font-style: bold;
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px silver;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Lucida Console", "Lucida Console", "Monospace";
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .History .Even {
+    height: 300px;
+    font-size: 15px;
+  }
+}
+.History .Even:hover {
+  background-color: lightgrey;
+  color: black;
+  text-shadow: 2px 2px white;
+}
+.History .Odd {
+  width: 30%;
+  height: 150px;
+  font-style: bold;
+  background-color: lightgrey;
+  text-shadow: 2px 2px white;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Lucida Console", "Lucida Console", "Monospace";
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .History .Odd {
+    height: 300px;
+    font-size: 15px;
+  }
+}
+.History .Odd:hover {
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px silver;
+}
+.History span {
+  font-size: 30px;
+  font-family: "Rockwell", "Rockwell", "serif";
+}
+.History button {
+  margin-left: 5%;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.History button:hover {
+  background-color: black;
+  color: white;
+}
+.contact {
+  width: 30%;
+  margin-left: 5%;
+  margin-top: 10px;
+  height: 100px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .contact {
+    width: 63%;
+    height: 100px;
+  }
+}
+.contact h4 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-style: bold;
+  font-family: "Rockwell", "Rockwell", "serif";
+  text-shadow: 2px 2px white;
+}
+@media (max-width: 500px) {
+  .contact h4 {
+    margin-left: 5px;
+  }
+}
+.contact p {
+  font-size: 17px;
+  line-height: 1.2;
+  font-family: "Lucida Console", "Lucida Console", "Monospace";
+}
+@media (max-width: 500px) {
+  .contact p {
+    margin-left: 5px;
+  }
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+.contact a:hover {
+  text-transform: uppercase;
+  text-shadow: 1px 1px white;
+}
+footer {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: darkgrey;
+  width: 90%;
+  margin-left: 5%;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  text-shadow: 1px 1px white;
+}
