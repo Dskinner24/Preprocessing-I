@@ -50,10 +50,317 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background: lightcyan;
+	vertical-align: center;
 }
 
+@font: "Rockwell", "Rockwell", "serif";
+@fontsize: 250%;
+@border: 10px;
+
+.Nav-Bar {
+	width: 90%;
+	height: 35px;
+	background-color: black;
+	border: 1px solid whitesmoke;
+	margin-left: 5%;
+	border-radius: @border;
+	margin-bottom: 10px;
+
+	a {
+		font-family: "Palatino Lynotype", "Palatino Linotype";
+		color: white;
+		font-size: 25px;
+		text-decoration: none;
+		text-shadow: 4px 4px 7px rgb(136, 221, 247);
+		margin-top: 50%; 
+		margin-left: 10px;
+
+		@media (max-width: 500px) {
+			margin-left: 20px;
+		}
+	}
+
+	a:hover {
+		color: red;
+		text-transform: uppercase;
+	}
+}
+
+
+.header {
+	width: 90%;
+	height: 530px;
+	background-color: darkgrey;
+	margin-left: 5%;
+	border-radius: @border;
+
+	@media (max-width: 500px) {
+		height: 575px;
+	}
+
+	img {
+		width: 250px;
+		height: 250px;
+		margin-top: 50px;
+		margin-left: 50px;
+
+		@media (max-width: 500px) {
+			margin-left: 20%;
+		}
+	}
+
+	.quote {
+		margin-left: 50px;
+		margin-bottom: 5px;
+		font-size: 25px;
+		font-family: "Brush Script MT", "Brush Script MT", "Cursive";
+		font-style: italic;
+	}
+
+	.side {
+		width: 85%;
+		margin-left: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.Name {
+		margin-left: 50px;
+		margin-top: 25px;
+		margin-bottom: 15px;
+		font-size: @fontsize;
+		font-family: @font;
+	}
+
+	button {
+		margin-left: 50px;
+		margin-top: 10px;
+		border-radius: 15px;
+		font-size: 20px;
+
+		@media (max-width: 500px) {
+			font-size: 12px;
+			margin-top: 5px;
+		}
+	}
+
+	button:hover {
+		background-color: black;
+		color: white;
+	}
+}
+
+.Description {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-left: 5%;
+	text-shadow: 2px 2px white;
+
+	.Self {
+		width: 45%;
+		height: 420px;
+		background-color: lightgrey;
+		padding: 20px;
+		line-height: 190%;
+		border-radius: @border;
+		margin-bottom: 10px;
+
+		@media (max-width: 500px) {
+			height: 540px;
+		}
+	}
+
+	.Headers {
+		font-size: 25px;
+		margin-bottom: 5px;
+		font-family: @font;
+	}
+
+	.Short {
+		font-size: 18px;
+		font-family: "Lucida Console", "Lucida Console", "Monospace";
+		
+		@media (max-width: 500px) {
+			line-height: 1;
+		}
+	}
+
+	.Skills {
+		.Self();
+		margin-right: 5%;
+	}
+
+	ul {
+		.Short();
+		list-style-type: circle;
+
+		li {
+			line-height: 400%;
+		}
+	}
+}
+ 
+.History {
+	width: 95.2%;
+
+	h2 {
+		background-color: lightgrey;
+		font-size: 25px;
+		text-align: center;
+		height: 25px;
+		margin-top: 10px;
+		margin-left: 5%;
+		text-shadow: 2px 2px white;
+		border-radius: @border;
+		margin-bottom: 10px;
+	}
+
+	h2:hover {
+		background-color: black;
+		color: white;
+		text-shadow: 2px 2px silver;
+	}
+
+	.Jobs {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-left: 5%;
+	}
+
+	.Even {
+		width: 30%;
+		height: 150px;
+		font-style: bold;
+		background-color: black;
+		color: white;
+		text-shadow: 2px 2px silver;
+		font-size: 20px;
+		margin-top: 10px;
+		text-align: center;
+		font-family: "Lucida Console", "Lucida Console", "Monospace";
+		border-radius: @border;
+
+		@media (max-width: 500px) {
+			height: 300px;
+			font-size: 15px;
+		}
+	}
+
+	.Even:hover {
+		background-color: lightgrey;
+		color: black;
+		text-shadow: 2px 2px white;
+	}
+
+	.Odd {
+		width: 30%;
+		height: 150px;
+		font-style: bold;
+		background-color: lightgrey;
+		text-shadow: 2px 2px white;
+		font-size: 20px;
+		margin-top: 10px;
+		text-align: center;
+		font-family: "Lucida Console", "Lucida Console", "Monospace";
+		border-radius: @border;
+
+		@media (max-width: 500px) {
+			height: 300px;
+			font-size: 15px;
+		}
+	}
+
+	.Odd:hover {
+		background-color: black;
+		color: white;
+		text-shadow: 2px 2px silver;
+	}
+
+	span {
+		font-size: 30px;
+		font-family: @font;
+	}
+
+	button {
+		margin-left: 5%;
+		margin-top: 20px;
+		border-radius: 15px;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	button:hover {
+		background-color: black;
+		color: white;
+	}
+}
+
+.contact {
+	width: 30%;
+	margin-left: 5%;
+	margin-top: 10px;
+	height: 100px;
+	background-color: lightgrey;
+	border-radius: @border;
+
+	@media (max-width: 500px) {
+		width: 63%;
+		height: 100px;
+	}
+
+	h4 {
+		font-size: 25px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		font-style: bold;
+		font-family: @font;
+		text-shadow: 2px 2px white;
+
+		@media (max-width: 500px) {
+			margin-left: 5px;
+		}
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 1.2;
+		font-family: "Lucida Console", "Lucida Console", "Monospace";
+
+		@media (max-width: 500px) {
+			margin-left: 5px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	a:hover {
+		text-transform: uppercase;
+		text-shadow: 1px 1px white;
+	}
+}
+
+footer {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background-color: darkgrey;
+	width: 90%;
+	margin-left: 5%;
+	height: 50px;
+	padding: 15px;
+	font-size: 18px;
+	border-radius: @border;
+	text-shadow: 1px 1px white;
+}
